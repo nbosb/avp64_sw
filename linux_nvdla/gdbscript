@@ -1,0 +1,4 @@
+symbol-file /scratch/bosbach/avp64_sw/linux_nvdla/BUILD/buildroot/output/linux/build/linux-4.19.4/vmlinux
+set substitute-path /app/build/ /scratch/bosbach/avp64_sw/linux_nvdla/BUILD/
+target remote :52100
+layout split
