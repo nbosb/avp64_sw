@@ -38,11 +38,14 @@
 
 		cpu0: cpu@0 {
 			device_type = "cpu";
-			compatible = "arm,armv8";
+			compatible = "arm,cortex-a72";
 			reg = <0x0 0x0>;
 		};
 
 	};
+    pmu {
+        compatible = "arm,cortex-a72-pmu";
+    };
 
 	chosen {
 		bootargs = "earlycon console=ttyAMA0 root=/dev/mmcblk0p1 rootwait debug";
@@ -54,7 +57,7 @@
 		reg = <0x00000000 0x10000000>;
 	};
 
-timer {
+    timer {
 		compatible = "arm,armv8-timer", "arm,armv7-timer";
 		interrupts = <1 13 0xFF04>,
 			     <1 14 0xFF04>,
@@ -63,7 +66,7 @@ timer {
 		clock-frequency = <1000000000>;
 	};
 
-amba {
+    amba {
 		#address-cells = <0x1>;
 		#size-cells = <0x1>;
 		compatible = "arm,amba-bus", "simple-bus";
