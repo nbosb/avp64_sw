@@ -1,0 +1,20 @@
+##############################################################################
+#                                                                            #
+# Copyright 2024  Nils Bosbach                                               #
+#                                                                            #
+# This software is licensed under the Apache license.                        #
+# A copy of the license can be found in the LICENSE file at the root         #
+# of the source tree.                                                        #
+#                                                                            #
+##############################################################################
+
+board:
+  name: avp64
+  vendor: arm64
+  socs:
+  - name: avp64
+    variants:
+    - name: x1
+    - name: x2
+    - name: x4
+    - name: x8
